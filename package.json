@@ -1,0 +1,29 @@
+{
+  "name": "data-import",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf build && mkdir build",
+    "build-babel": "babel -d ./build ./src -s",
+    "build": "npm run clean && npm run build-babel",
+    "start": "npm run build && node ./build/index.js",
+    "dev": "rm -rf ./node_modules/.cache/@babel && ./node_modules/.bin/nodemon --exec babel-node ./src/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "babel-plugin-import-graphql": "^2.7.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^14.5.8",
+    "lodash": "^4.17.15",
+    "neat-csv": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.0",
+    "@babel/node": "^7.7.0",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
+    "nodemon": "^1.19.4"
+  }
+}

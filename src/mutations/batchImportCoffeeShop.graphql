@@ -1,0 +1,14 @@
+mutation UpdateCoffeeShop(
+  $brand: String
+  $data: [CoffeeShopCreateWithoutBrandInput!]
+) {
+  updateBrand(where: {
+    name: $brand
+  }, data:{
+    coffeeShops: {
+      create: $data
+      }
+  }) {
+    id
+  }
+}
