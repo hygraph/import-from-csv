@@ -182,7 +182,7 @@ export const inspectData = async () => {
 
 ### Data Cleansing and Transformation
 
-The transformation methods are in `/transorms`, I recommend using a similar pattern. The transforms will be applied in the next section.
+The transformation methods are in `/transforms`, I recommend using a similar pattern. The transforms will be applied in the next section.
 
 ```js
 const ownership = {
@@ -250,7 +250,7 @@ mutation UpdateCoffeeShop(
 }
 ```
 
-I've provided some helper utilities using `Axios`, you will need to provide your own Project API ID and create a secure token for importing the data. For more information on creating a token, [check the docs on working with Permanent Auth Tokens.](https://graphcms.com/docs/guides/working-with-pats.mdx)
+I've provided some helper utilities using `Axios`, you will need to provide your own Project API ID and create a secure token for importing the data. For more information on creating a token, [check the docs on working with Permanent Auth Tokens.](https://graphcms.com/docs/guides/working-with-pats)
 
 Fill out the following values in your `.env file.
 
