@@ -2,7 +2,7 @@
 
 To help with the process of importing CSVs to GraphCMS, we've created some simple scripts that can assist in the process. These scripts are not robust, they lack in-depth error checking, and probably lack some general code elegance, but you can view them as an import workspace to quick-start your importing needs.
 
-To follow along you'll need to signup for an account at GraphCMS, create a new project and implement the schema as defined above. For more details about creating a project with GraphCMS, [check our getting started guide.](https://graphcms.com/docs/getting-started/)
+To follow along you'll need to signup for an account at GraphCMS, create a new project and implement the schema as defined above. For more details about creating a project with GraphCMS, [check our getting started guide.](https://graphcms.com/blog/graphcms-quickstart)
 
 The project structure is as follows.
 
